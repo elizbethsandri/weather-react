@@ -1,0 +1,18 @@
+:root {
+  --border-color: #a9b1b9;
+  --background-color: transparent; 
+}
+
+.SearchEngine button, input {
+  border-color: var(--border-color);
+  background-color: var(--background-color);
+  }
+
+.CurrentLocation button {
+  padding: 6px 30px;
+}
+
+.SearchEngine button:hover  {
+  background-color: #C2D4EB;
+  border-color:#d9ecf6;
+}
