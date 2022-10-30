@@ -2,6 +2,7 @@ import './App.css';
 import Weather from './Weather';
 import SearchEngine from './SearchEngine';
 import CurrentLocationWeather from './CurrentLocationWeather';
+import Forecast from './Forecast';
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <SearchEngine />
       <Weather city="Tokyo" />
       <CurrentLocationWeather />
+      <br />
+      <br />
+      <Forecast />
     </div>
   );
 }
