@@ -18,7 +18,7 @@ function App() {
       <Forecast />
       <div className='SourceCode'>
       <p>
-      <a className="GitHubLink" href="https://github.com/elizbethsandri/weather-app-2.0" target="_blank">
+      <a className="GitHubLink" href="https://github.com/elizbethsandri/weather-app-2.0" target="_blank" rel='noreferrer'>
      Open-source code</a>, by Liz Sandri
       </p>
       </div>
