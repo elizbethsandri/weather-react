@@ -16,6 +16,10 @@ function App() {
       <br />
       <br />
       <Forecast />
+      <p>
+      <a className="GitHubLink" href="https://github.com/elizbethsandri/weather-app-2.0" target="_blank">
+     Open-source code</a>, by Liz Sandri
+      </p>
     </div>
   );
 }
