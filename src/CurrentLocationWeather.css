@@ -1,0 +1,53 @@
+:root {
+    --font-color: #71788a;
+    --font-type: 'Source Code Pro', monospace;
+}
+
+body {
+    color: var(--font-color);
+}
+
+.CurrentLocationWeather {
+    margin: 40px 0px 0px 0px;
+}
+
+.CurrentLocationWeather img {
+    position: relative; bottom: 15px;
+    padding: 0px 10px;
+}
+ 
+.Degree {
+    font-size: 68px; 
+    font-weight: 300;
+    padding: 0px 5px auto; 
+    line-height: 5px;
+}
+  
+.Unit {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 1px 5px 1px; 
+    margin-bottom: 68px;
+    position: relative;
+    bottom: 30px;
+}
+  
+.WeatherDetails {
+    font-family: var(--font-type);
+}
+
+.LocalandTime h2 {
+    font-size: 34px;   
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.MoreWeatherDetails p {
+    font-size: 20px; 
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.WeatherDescription {
+    line-height: 30px;  
+}
