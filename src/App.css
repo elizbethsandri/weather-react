@@ -31,7 +31,7 @@ body {
   margin: 20px 0px 40px ;
 }
 
-.SourceCode p {
+footer {
   font-family: 'Source Code Pro', monospace;
   padding: 50px 0px 20px 0px;
   font-size: 16px;
@@ -39,6 +39,6 @@ body {
   color: #71788a;
 }
 
-.SourceCode a {
+.GitHubLink {
   color: var(--primary-color);
 }
