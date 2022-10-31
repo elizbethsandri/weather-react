@@ -7,11 +7,11 @@ body {
     color: var(--font-color);
 }
 
-.CurrentLocationWeather {
+.Weather {
     margin: 40px 0px 0px 0px;
 }
 
-.CurrentLocationWeather img {
+.Weather img {
     position: relative; bottom: 15px;
     padding: 0px 10px;
 }
@@ -42,10 +42,15 @@ body {
     line-height: 36px;
 }
 
-.MoreWeatherDetails p {
+.MoreWeatherDetails ul {
+   padding: 0px;
+}
+
+.MoreWeatherDetails li {
     font-size: 20px; 
     line-height: 28px;
     font-weight: 500;
+    list-style: none; 
 }
 
 .WeatherDescription {
