@@ -1,5 +1,4 @@
 import './App.css';
-import SearchEngine from './SearchEngine';
 import Weather from './Weather';
 import Forecast from './Forecast';
 
@@ -10,8 +9,7 @@ function App() {
       <header>
         <h1>Weather today</h1>
       </header>
-      <SearchEngine />
-      <Weather />
+      <Weather defaultCity="New York" />
       <br />
       <br />
       <Forecast />

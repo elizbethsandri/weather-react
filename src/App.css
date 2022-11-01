@@ -11,7 +11,7 @@ body {
 .App {
   max-width: 1000px; 
   height: fit-content;
-  padding: 20px 60px; 
+  padding: 20px 50px; 
   border: 1px solid #dadde1;
   border-radius: 10px;
   background: linear-gradient(248deg,
@@ -28,7 +28,9 @@ body {
   color: var(--primary-color);
   font-size: 32px; 
   font-family: 'Source Code Pro', monospace; 
-  margin: 20px 0px 40px ;
+  margin: 10px 0 40px auto;
+  line-height: 38.4px;
+  padding: 0px auto;
 }
 
 footer {
