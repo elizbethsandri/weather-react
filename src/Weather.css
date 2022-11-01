@@ -18,17 +18,20 @@ body {
 .Degree {
     font-size: 68px; 
     font-weight: 300;
-    padding: 0px 5px auto; 
+    padding: 0px 0px 0px 5px; 
     line-height: 5px;
 }
   
-.Unit {
+.Units {
     font-size: 20px;
     font-weight: 400;
-    padding: 1px 1px; 
-    margin-bottom: 68px;
     position: relative;
-    bottom: 30px;
+    bottom: 32px;
+}
+
+.Units a {
+    text-decoration: none;
+    padding: 0px 4px 0px 4px;
 }
   
 .WeatherDetails {
