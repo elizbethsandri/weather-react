@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import axios from "axios";
 import './Weather.css';
+import FormattedDate from "./FormattedDate";
 
-export default function Weather() {
+export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
+    const [city, setCity] = useState(props.defaultCity);
 
     function handleResponse(response) {
         console.log(response.data);
         setWeatherData({
             ready: true,
-            temperature: Math.round(response.data.main.temp),
-            city: response.data.name,
-            date: "Tuesday, 15:43",
-            description: response.data.weather[0].description,
-            humidity: response.data.main.humidity,
+            temperature: Math.round(response.data.temperature.current),
+            city: response.data.city,
+            date: new Date(response.data.time * 1000),
+            description: response.data.condition.description,
+            humidity: response.data.temperature.humidity,
             wind: response.data.wind.speed,
-            min: Math.round(response.data.main.temp_min),
-            max: Math.round(response.data.main.temp_max),
         });
     }
 
@@ -25,8 +25,9 @@ export default function Weather() {
             <div className="container">
             <div className="Weather">
                 <span>
-                    <img  className="TemperatureIcon" src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                        alt="Cloudy" class="weather-icon float-left" />
+                    <img  className="TemperatureIcon" src=
+"http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+                        alt={weatherData.description} class="weather-icon float-left" />
                 </span>
                 <span className="Degree">{weatherData.temperature}</span>
                 <span className="Unit">ºC</span>
@@ -34,7 +35,7 @@ export default function Weather() {
             <div className="WeatherDetails">
             <div className="LocalandTime">
                 <h2 className="City">{weatherData.city}</h2>
-                <h2 className="Date&Time">{weatherData.date}</h2>
+                <FormattedDate className="Date&Time" date={weatherData.date} />
             </div>
             <div className="MoreWeatherDetails">
             <ul>
@@ -48,9 +49,9 @@ export default function Weather() {
             </div>
             );     
     } else {
-    const apiKey = `8cac06f7ab6c10287cd06a316ff84a57`;
+    const apiKey = `406acc31e3t70db95bde98ef0co5dbb1`;
     let city = `London`;
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse); 
 
     return `Loading...`
