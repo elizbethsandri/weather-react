@@ -5,8 +5,6 @@ import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
-    const [city, setCity] = useState(props.defaultCity);
-
     function handleResponse(response) {
         console.log(response.data);
         setWeatherData({
@@ -19,6 +17,7 @@ export default function Weather(props) {
             wind: response.data.wind.speed,
         });
     }
+
 
     if (weatherData.ready) {
         return (
@@ -51,7 +50,7 @@ export default function Weather(props) {
     } else {
     const apiKey = `406acc31e3t70db95bde98ef0co5dbb1`;
     let city = `London`;
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=London&key=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse); 
 
     return `Loading...`
