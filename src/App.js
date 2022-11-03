@@ -6,9 +6,6 @@ function App() {
   return (
     <div className="App">
       <div className='container'>
-      <header>
-        <h1>Weather today</h1>
-      </header>
       <Weather defaultCity="New York" />
       <br />
       <br />

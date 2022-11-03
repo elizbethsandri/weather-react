@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #d691aec2;
+  --primary-color: #fdf8ffc2;
 }
 
 body {
@@ -11,26 +11,17 @@ body {
 .App {
   max-width: 1000px; 
   height: fit-content;
-  padding: 20px 50px; 
+  padding: 50px 50px; 
   border: 1px solid #dadde1;
   border-radius: 10px;
-  background: linear-gradient(248deg,
-  rgba(255, 231, 224, 1) 7%,
-  rgba(255, 231, 224, 1) 7%,
-  rgba(255, 246, 230, 1) 31%,
-  rgba(254, 247, 223, 1) 65%);
-   background-size: 100% auto;
-   background-repeat: no-repeat;
-}
-
-.App h1 {
-  text-transform: uppercase;
-  color: var(--primary-color);
-  font-size: 32px; 
-  font-family: 'Source Code Pro', monospace; 
-  margin: 10px 0 40px auto;
-  line-height: 38.4px;
-  padding: 0px auto;
+  background: linear-gradient(to bottom,
+  rgb(144, 123, 167),
+  rgb(135, 124, 191) 10%,
+  rgb(97, 79, 185) 41%,
+  rgb(85, 67, 178) 61%,
+  rgb(93, 57, 192) 75%);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 footer {

@@ -1,5 +1,5 @@
 :root {
-    --font-color: #71788a;
+    --font-color: #fdf8ffc2;
     --font-type: 'Source Code Pro', monospace;
 }
 
@@ -30,6 +30,7 @@ body {
 }
 
 .Units a {
+    color: rgb(71, 41, 129);
     text-decoration: none;
     padding: 0px 4px 0px 4px;
 }

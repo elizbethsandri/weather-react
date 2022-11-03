@@ -1,11 +1,12 @@
 :root {
-  --border-color: #a9b1b9;
+  --border-color: #fdf8ffc2;
   --background-color: transparent; 
 }
 
 .SearchEngine button, input {
   border-color: var(--border-color);
   background-color: var(--background-color);
+  color: var(--border-color);
   }
 
 .CurrentLocation button {
