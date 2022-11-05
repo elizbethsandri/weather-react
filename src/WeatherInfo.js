@@ -21,7 +21,6 @@ export default function WeatherInfo(props) {
         <div className="MoreWeatherDetails">
         <ul>
             <li className="WeatherDescription">{props.data.description}</li>
-            <li>min <span className="min">1</span>º | max <span className="max">1</span>º</li>
             <li>humidity <span className="humidity">{props.data.humidity}</span>%</li>
             <li>wind {props.data.wind}km/h</li>
         </ul>
