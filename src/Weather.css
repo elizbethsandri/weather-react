@@ -28,12 +28,6 @@ body {
     position: relative;
     bottom: 32px;
 }
-
-.Units a {
-    color: rgb(71, 41, 129);
-    text-decoration: none;
-    padding: 0px 4px 0px 4px;
-}
   
 .WeatherDetails {
     font-family: var(--font-type);
