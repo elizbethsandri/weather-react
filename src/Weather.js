@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./SearchEngine.css";
 import './Weather.css';
 import WeatherInfo from "./WeatherInfo";
-import "./SearchEngine.css";
 import Forecast from './Forecast';
 
 export default function Weather(props) {
@@ -42,20 +42,13 @@ export default function Weather(props) {
         <div className="SearchEngine">
         <form onSubmit={handleSubmit}>
             <div className="container">
-            <div className="row">
-                <div className="col-10">
                 <span class="input-group mb-3">
                 <input
                 type="search" placeholder="search for a city"
                 className="form-control" onChange={handleCityChange} />
-                <button type="submit" className="btn btn-outline-secondary">🔍</button>
+                <button type="submit" className="btn btn-outline-secondary">Search</button>
                 </span>
                 </div>
-                <div className="col-2 CurrentLocation">  
-                <button className="btn btn-outline-secondary" type="button">current</button>  
-                </div>
-            </div>
-            </div>
         </form>
         <WeatherInfo data={weatherData} />
         <Forecast coordinates={weatherData.coordinates} />
