@@ -16,6 +16,11 @@
 
 }
 
+.TemperatureIcon {
+    width: 80px;
+    height: 80px;
+}
+
 .ForecastDate, .ForecastMax {
     font-weight: 500;
 }
