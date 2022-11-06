@@ -7,10 +7,9 @@ function App() {
       <div className='container'>
       <Weather defaultCity="New York" />
       <br />
-      <br />
       <footer>
       <a className="GitHubLink" href="https://github.com/elizbethsandri/weather-react" target="_blank" rel='noreferrer'>
-     Open-source code</a>, by Liz Sandri
+     Open-source code</a>, by Liz Sandri.
       </footer>
       </div>
     </div>

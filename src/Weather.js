@@ -44,7 +44,7 @@ export default function Weather(props) {
             <div className="container">
                 <span class="input-group mb-3">
                 <input
-                type="search" placeholder="search for a city"
+                type="search" placeholder="Search for a city"
                 className="form-control" onChange={handleCityChange} />
                 <button type="submit" className="btn btn-outline-secondary">Search</button>
                 </span>
